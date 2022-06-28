@@ -1,156 +1,144 @@
-*{
-    margin: 0px;
-    padding: 0px;
-
-}
-
-body{
-    background-color: rgb(168, 162, 162);
-}
-
-.mainconteiner{
-position: relative;
-width: 666px;
-height: 500px;
-padding: 50px 50px 50px 50px;
-left: 23%;
-top: 30px;
-
-}
-.header {
-
-   background-color: white;
-   padding: 30px 10px 10px 20px;
-   border-top-right-radius: 10px;
-   border-top-left-radius: 10px;
-   
-}
-.p1{
-    position: relative;
-    left: 20px;
-    color:  #2bb3b1;
-    font-size: 24px;
-}
-
-.p2 {
-    position: relative;
-    left: 20px;
-    color:chartreuse;
-}
-.p3{
-    position: relative;
-    left: 20px;
-
-}
-
-.one{
-    background-color: #2bb3b1;
-    padding: 30px 10px 10px 20px;
-    width: 292px;
-    height: 284px; 
-    position: relative;
-    bottom: 18px;
-    color: white;
-    font-size: 24px;
-    border-bottom-left-radius: 10px;
-
-}
-
-.all{
-    font-size: 20px;
-    position: relative;
-    left: 15px;
-    top: 10px;
-}
-
-
-.two{
-    background-color: #4abebd;
-    width: 315px;
-    height: 284px;
-    position: relative;
-    left: 321px;
-    bottom: 360px;
-    padding: 30px 10px 10px 20px;
-    color: white;
-    border-bottom-right-radius: 10px;
-
-}
-
-
-.btn button{
-    width: 230px;
-    height:40px;
-    position: relative;
-    top: 20px;
-    left: 20px;
-    background-color: chartreuse;
-    color: white;
-    font-size: 19px;
-    border-radius: 5px;
-    border: none;
-}
-
-.one .font{
-    font-size: 39px;
-    font-weight:bold;
-
-}
-
-.one  .per{
-    font-size: 20px;
-    position: relative;
-    bottom: 8px;
-    font-weight: normal;
-
-}
-
-.one .dadaa{
-    font-size: 18px;
-    position: relative;
-    bottom: 8px;
-    font-weight: normal;
-
-}
-
-
-.two h4{
-    font-size: 33px;
-}
-
-.ass{
-    position: relative;
-    left: 15px;
-}
-
-@media screen and (max-width:716px){
-   
-     .header{
-         width: 50vw;
-         height: 25vh;
-     }
-     .one{
-      position: relative;
-      width: 50vw;
-      height: 25vh;
-      border-radius: 0;
-
-     }
-
-     .two{
-        position: relative;
-        width: 50vw;
-        height: 25vh;
-        top: -38px;
-        left: -1px;
-        border-bottom-left-radius: 10px;
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font: var(--fs-default) var(--ff-default);
+  }
+  :root {
+    --mobile-size: 375px;
+    --desktop-size: 1440px;
+    --clr-primary-cyan: #2ab2af;
+    --clr-primary-cyan-light: #2fcac8;
+    --clr-primary-bright_yellow: #c0df34;
+    --clr-neutral-light_gray: #e5eff5;
+    --clr-neutral-grayish_blue: #98a6bd;
+    --clr-grayish: #e6eff6;
+    --fs-default: 16px;
+    --ff-default: "Karla", sans-serif;
+    --fw-karla_regular: 400;
+    --fw-karla_bold: 700;
+    --card-border: 0.5rem;
+  }
   
-       }
-
-     .section{
-         position: relative;
-         display: inline;
-     }
-
-}
+  ul, li{
+      list-style: none;
+      padding: 0;
+  
+  }
+  main{
+      background: var(--clr-grayish);
+      padding: 1.4rem;
+      
+  }
+  
+  .container{
+      width: 100%;
+      max-width: var(--mobile-size);
+      margin: 3rem auto;
+  
+  }
+  .card-component{
+      padding: 2.8rem;
+  
+  }
+  .community {
+      background: white;
+      border-radius: var(--card-border) var(--card-border) 0 0;
+  }
+  .community h1{
+      color: var(--clr-primary-cyan);
+      margin-bottom: 1.5rem;
+  
+  }
+  .community h2{
+      color: var(--clr-primary-bright_yellow);
+      margin-bottom: 1.1rem;
+  
+  }
+  .community p{
+      color: var(--clr-neutral-grayish_blue);
+      line-height: 1.8;
+  }
+  
+  .subscribtion{
+      background-color: var(--clr-primary-cyan);
+  
+  }
+  .subscribtion{
+      color: white;
+  
+  }
+  .subscribtion h2{
+      color: white;
+      margin-bottom: 1.1rem;
+  }
+  .para{
+    color: var(--clr-primary-cyan-light);
+  }
+  .subscribtion .cost{
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      margin-bottom: 0.3rem;
+  
+  }
+  
+  .subscribtion .cost h1{
+     color: white;
+     
+  }
+  
+  .subscribtion .cost p{
+        color: var(--clr-primary-bright_yellow);
+  }
+  .subscribtion .btn{
+      text-align: center;
+      background-color: var(--clr-primary-bright_yellow);
+      border-radius: 0.3rem;
+      margin-top: 15px;
+      padding: 0.8rem 0;
+      font-size: 18px;
+  
+  }
+  
+  .subscribtion button{
+      border: none;
+      background: var(--clr-primary-bright_yellow);
+      color: white;
+      cursor: pointer;
+  }
+  .why{
+      background-color: var(--clr-primary-cyan-light);
+      border-radius: 0 0  var(--card-border) var(--card-border);
+  }
+  .why li{
+      color: var(--clr-neutral-light_gray);
+  }
+  .why h2{
+     color: white;
+     font-size: 2rem;
+     margin-bottom: 1.2rem;
+  }
+  
+  @media screen and (min-width: 920px){
+      .container{
+          width: 50%;
+          max-width: var(--desktop-size);
+          
+      }
+      .card-row{
+          display: flex;
+      }
+      .subscribtion{
+          width: 100%;
+          border-radius: 0 0 0 var(--card-border);
+      }
+      .why{
+          width: 100%;
+          border-radius:  0 0 var(--card-border) 0 ;
+      }
+      .community h1{
+             font-size: 2rem;
+      }
+  }
